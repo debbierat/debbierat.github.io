@@ -394,8 +394,111 @@ font-weight: bold;
 <div class="generalRules">
 <div class="blueContainer">
 <div class="spaceBetween"></div>
-<div class="spaceBetween"></div>
-<h1>Virtual Reality Exposure Therapy for Anxiety Disorders</h1>
-<h2>Can VRET be an effective and equal medium for exposure therapy: A metaanalysis of randomized controlled trials.</h2>
+<h2>Virtual reality compared with in vivo exposure in the treatment of social anxiety disorder: A three-arm randomised controlled trial.</h2>
 <div class="spaceBetween"></div>
 </div>
+
+<div class="sectionHeader">
+    SHORT REVIEW
+  </div>
+  <div class="horizontalLine"> </div>
+  <p></p>
+  
+  <div class="sectionTextBox" id="sectionTextBox1">
+    <div class="sectionText">
+      <b>General Description</b>
+    </div>
+    <span class="expand-button" onclick="expandTextBox('sectionTextBox1')">+</span>
+    <div id="extraText" style="display: none;">
+    <div class="sectionText">
+    Social anxiety disorder (SAD) is one of the most prevalent mental disorders but luckily also has effective treatment options. Nevertheless, is it largely undertreated. Especially people with SAD struggle with seeking treatment due to the nature of their disorder meaning they avoid social interaction including health care professionals. Effective treatment options would be CBT (in vivo exposure therapy) in groups or individually, though group CBT can be less individualized and mean cuts to the patient’s privacy. Also, individual in vivo exposure is affecting the patient’s privacy and can lead to a higher workload for psychotherapists. Therefore, having the option of also using VR for exposure might ease the step towards treatment for patients, increase the feeling of security and confidentiality during treatment and reduce the workload for psychotherapists. Moreover, it allows for more control, eliminates the need for participants that play the counterparts for the patients and can offer a wide range of environments with the click of a button. Thus, the authors wanted to investigate if VR exposure is as effective or even more effective as individual in vivo exposure compared to a waitlist control.
+    </div>
+    </div>
+  </div>
+  
+<div class="spaceBetween"></div>
+  
+  <div class="sectionTextBox" id="sectionTextBox2">
+    <div class="sectionText">
+      <b>What methods were used?</b>
+    </div>
+    <span class="expand-button" onclick="expandTextBox('sectionTextBox2')">+</span>
+    <div id="extraText" style="display: none;">
+      <div class="sectionText">
+        59 adults with SAD were randomly assigned to  three conditions, namely CBT with in vivo exposure, CBT with VR exposure and a waitlist control to compare effectiveness of the treatments. SAD outcome measures were collected via self-report questionnaires as well as potential depressive symptoms. Further, they carried out behavioral assessments by evaluating impromptu speeches of patients with the help of the Social Performance Rating Scale. Lastly, they evaluated the workload for therapists of each exposure option via questionnaires and checked for unwanted side effects of VR use (e.g. cybersickness) via the Simulator Sickness Questionnaire. All parts of the CBT besides the actual exposure exercises were identical between the two treatment conditions.
+      </div>
+    </div>
+  </div>
+  
+  
+<div class="spaceBetween"></div>
+  
+  <div class="sectionTextBox" id="sectionTextBox3">
+    <div class="sectionText">
+      <b>What are the results of this study?</b>
+    </div>
+    <span class="expand-button" onclick="expandTextBox('sectionTextBox3')">+</span>
+    <div id="extraText" style="display: none;">
+      <div class="sectionText">
+        At post-treatment, VR exposure turned out to be more effective than in vivo exposure compared to the waitlist control on the main outcome measure of social anxiety LSAS-SR (t(56)= 2.02, p<.05) as well as one of the secondary outcome measures: SPS (t(56)= 2.69, p<.01) while all other measures showed no significant differences. The significant difference of the secondary outcome SPS did not reach significance at the 6-month follow up though. Moreover, VR exposure showed to be more practical for therapists than in vivo exposure (t (22.83) = 3.66, p<.001). Success rates of both active conditions were not significantly different (χ2(1) = 0.33, not significant).
+      </div>
+    </div>
+  </div>
+  
+  
+  
+<div class="spaceBetween"></div>
+  
+  <div class="sectionTextBox" id="sectionTextBox5">
+    <div class="sectionText">
+      <b>Conclusion</b>
+    </div>
+    <span class="expand-button" onclick="expandTextBox('sectionTextBox5')">+</span>
+    <div id="extraText" style="display: none;">
+      <div class="sectionText">
+        Since VR exposure showed to be more effective than in vivo exposure on two measures compared to the control while showing no difference in effectiveness on the remaining measures, they concluded that VR exposure is at least an equally effective treatment option in comparison to the traditional in vivo exposure. The lower workload of VR exposure compared to in vivo exposure further supports the notion of VR exposure being a relevant alternative or even preferred to the traditional kind. Previous studies were not able to find that VR exposure was superior to in vivo exposure as it was here on some measures. This could be due to differences in how exposure was conducted, how close the therapeutic alliance was and that dialogues with virtual humans posed technical challenges. Limitations were the critical objectivity raised by using questionnaires, no investigation of how VR exposure compares to in vivo exposure in a group setting, need for replication with a larger sample size and the differences in exposure scenarios between active conditions.
+        </div>
+    </div>
+  </div>
+
+<div class="spaceBetween"></div>
+  
+  <div class="sectionTextBox" id="sectionTextBox4">
+    <div class="sectionText">
+      <b>Relevance</b>
+    </div>
+    <span class="expand-button" onclick="expandTextBox('sectionTextBox4')">+</span>
+    <div id="extraText" style="display: none;">
+      <div class="sectionText">
+        In vivo exposure compared to other in vivo exposure exercises for other anxiety-related disorders are especially prone to complications or adverse reactions of others. For example, during exercises like Shame attack exercises that are usually done in a real-life setting, there is no control of how the other person might react and opens up the possibility to unexpected negative reactions like rejection. This problem would be mitigated by the use of VR. Thus, it is relevant to investigate how effective its use is compared to traditional exposure and also how practical it is as to substantiate its potential future application with empirical findings.
+      </div>
+    </div>
+  </div>
+  
+
+
+</div>
+</body> 
+</style>
+
+
+<script>
+    function expandTextBox(sectionID) {
+      var extraText = document.getElementById(sectionID).querySelector("#extraText");
+      var textBox = document.getElementById("textBox");
+      
+      if (extraText.style.display === "none") {
+        extraText.style.display = "block";
+        textBox.style.overflow = "visible"; // Allow overflow to show extra text
+        document.getElementsByClassName("expand-button")[0].textContent = "-"; // Change button text to "-"
+      } else {
+        extraText.style.display = "none";
+        textBox.style.overflow = "hidden"; // Hide overflow again
+        document.getElementsByClassName("expand-button")[0].textContent = "+"; // Change button text back to "+"
+      }
+    }
+  </script> 
+      
+    
+      </body></html>
+  
