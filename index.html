@@ -271,11 +271,14 @@ pre[data-line] .line-highlight[data-end]:after {
   align-items: center;
   max-width: 960px;
   border: 1px solid #3452aa;
-  margin-left: 100px;
-  margin-right: 100px;
 }
 .blueContainer {
   background-color: #707fad;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space space-between;
 }
 h1 {
   text-align: center;
@@ -290,6 +293,7 @@ h2 {
   padding-right: 100px;
 }
 .titleTextContent {
+  flex: 1;
   border: none; 
 }
 img {
@@ -382,7 +386,7 @@ img {
   font-size: 28px;
   color: #007bff;
   margin-top: -50px;
-  margin-right: 50px;
+  margin-right: -50px;
   font-weight: bold;
 }
 </style>
@@ -404,9 +408,9 @@ img {
       <img src="/Bild_WebsiteVR.png", alt="VR Image">
     </div>
     <div class="titleTextContent">
-    <div class="titleText">
-      Carl et al. (2019) explored in their study, how.. .
-    </div>
+      <div class="titleText">
+        Carl et al. (2019) explored in their study, how.. .
+      </div>
     </div>
   </div>
 </div>
