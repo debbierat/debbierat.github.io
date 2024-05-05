@@ -368,6 +368,18 @@ img {
 .downloadbutton:hover {
   background-color: #d6cb8b;
 }
+.text-box {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  overflow: hidden; /* Hide overflow by default */
+}
+.expand-button {
+  cursor: pointer;
+  float: right;
+  font-size: 20px;
+  color: #007bff;
+}
 </style>
 
 <body>
@@ -393,6 +405,16 @@ img {
     </div>
   </div>
 </div>
+
+
+<div class="text-box" id="textBox">
+  <p>This is the initial text. Click the "+" to reveal more.</p>
+  <span class="expand-button" onclick="expandTextBox()">+</span>
+  <div id="extraText" style="display: none;">
+    <p>This is the additional text that will be revealed when the button is clicked.</p>
+  </div>
+</div>
+
 
 
 <div class="sectionHeader">
@@ -547,6 +569,22 @@ Carl, E., Stein, A.T., Levihn-Coon, A., Pogue, J.R., Rothbaum, B., Emmelkamp, P.
 <p> Weitere Quellen. </p>
 </div>
 </div>
+
+<script>
+function expandTextBox() {
+  var extraText = document.getElementById("extraText");
+  var textBox = document.getElementById("textBox");
+    
+  if (extraText.style.display === "none") {
+    extraText.style.display = "block";
+    textBox.style.overflow = "visible"; // Allow overflow to show extra text
+    document.getElementsByClassName("expand-button")[0].textContent = "-"; // Change button text to "-"
+  } else {
+    extraText.style.display = "none";
+    textBox.style.overflow = "hidden"; // Hide overflow again
+    document.getElementsByClassName("expand-button")[0].textContent = "+"; // Change button text back to "+"
+  }
+}
 
 </div>
 </body> 
