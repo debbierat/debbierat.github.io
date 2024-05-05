@@ -448,7 +448,7 @@ Small non-significant effect size for VRET vs in vivo-exposure (g= −0.07, SE =
   <div class="sectionText">
     <p><b>Introduction</b></p>
   </div>
-  <span class="expand-button" onclick="expandTextBox()">+</span>
+  <span class="expand-button" onclick="expandTextBox('sectionTextBox1')">+</span>
   <div id="extraText" style="display: none;">
   <div class="sectionText">
     <p>Anxiety-related disorders are the most prevalent class of mental disorders and therefore in need of research to fight this widespread suffrage of people. Cognitive-behavioural therapy (CBT) in combination with exposure therapy is indicated as one of the treatment options for many anxiety-related disorders and shows to be quite effective for example obsessive-compulsive disorder, social anxiety, posttraumatic stress disorder and more. Exposure therapy describes the confrontation with anxiety-inducing stimuli in hopes of desensitizing against the specific form of anxiety and therefore reducing it. Unfortunately, only maximally a third of anxiety-related patients that could be helped with exposure therapy actually received this treatment. This is where the use of Virtual Reality might come in handy to close this treatment gap.</p>
@@ -468,7 +468,7 @@ Small non-significant effect size for VRET vs in vivo-exposure (g= −0.07, SE =
   <div class="sectionText">
     <b>What is this study about?</b>
   </div>
-  <span class="expand-button" onclick="expandTextBox()">+</span>
+  <span class="expand-button" onclick="expandTextBox('sectionTextBox2')">+</span>
   <div id="extraText" style="display: none;">
     <div class="sectionText">
       <p>This meta-analysis aimed to investigate the efficacy of VRET in the treatment of a broad spectrum of anxiety-related disorders compared to in-vivo exposure, CBT, waitlist and other control conditions. The authors hypothesized to observe a large effect size for VRET versus control conditions and a non-significant difference between VRET and in-vivo exposure meaning it would be a similarly effective treatment as the traditional in vivo exposure.</p>
@@ -494,7 +494,7 @@ Small non-significant effect size for VRET vs in vivo-exposure (g= −0.07, SE =
   <div class="sectionText">
     <b>What are the results of this study?</b>
   </div>
-  <span class="expand-button" onclick="expandTextBox()">+</span>
+  <span class="expand-button" onclick="expandTextBox('sectionTextBox3')">+</span>
   <div id="extraText" style="display: none;">
     <div class="sectionText">
       <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
@@ -512,7 +512,7 @@ Small non-significant effect size for VRET vs in vivo-exposure (g= −0.07, SE =
   <div class="sectionText">
     <b>Quality of the meta-analysis</b>
   </div>
-  <span class="expand-button" onclick="expandTextBox()">+</span>
+  <span class="expand-button" onclick="expandTextBox('sectionTextBox4')">+</span>
   <div id="extraText" style="display: none;">
     <div class="sectionText">
       <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
@@ -529,7 +529,7 @@ Small non-significant effect size for VRET vs in vivo-exposure (g= −0.07, SE =
   <div class="sectionText">
     <b>Conclusion for research and relevant stakeholders</b>
   </div>
-  <span class="expand-button" onclick="expandTextBox()">+</span>
+  <span class="expand-button" onclick="expandTextBox('sectionTextBox5')">+</span>
   <div id="extraText" style="display: none;">
     <div class="sectionText">
     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
@@ -546,7 +546,7 @@ Small non-significant effect size for VRET vs in vivo-exposure (g= −0.07, SE =
   <div class="sectionText">
     <b>Study examples</b>
   </div>
-  <span class="expand-button" onclick="expandTextBox()">+</span>
+  <span class="expand-button" onclick="expandTextBox('sectionTextBox6')">+</span>
   <div id="extraText" style="display: none;">
     <div class="sectionText">
       <b>VR and Social Anxiety:</b>
@@ -590,8 +590,8 @@ Carl, E., Stein, A.T., Levihn-Coon, A., Pogue, J.R., Rothbaum, B., Emmelkamp, P.
     
     
 <script>
-  function expandTextBox() {
-    var extraText = document.getElementById("extraText");
+  function expandTextBox(sectionID) {
+    var extraText = document.getElementById(sectionID).querySelector("#extraText");
     var textBox = document.getElementById("textBox");
     
     if (extraText.style.display === "none") {
