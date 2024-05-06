@@ -727,6 +727,29 @@ Stock-Photos: <a href="https://www.pexels.com/de-de/">https://www.pexels.com</a>
       document.getElementsByClassName("expand-button")[0].textContent = "+"; // Change button text back to "+"
     }
   }
+
+  document.addEventListener("DOMContentLoaded", function() {
+  const popups = document.querySelectorAll(".popup-trigger");
+  popups.forEach(function(popup) {
+    popup.addEventListener("mouseenter", function() {
+      const tooltipText = this.getAttribute("data-tooltip");
+      const tooltip = document.createElement("div");
+      tooltip.classList.add("popup-tooltip");
+      tooltip.textContent = tooltipText;
+      document.body.appendChild(tooltip);
+      const rect = this.getBoundingClientRect();
+      tooltip.style.top = rect.top - tooltip.offsetHeight - 5 + "px";
+      tooltip.style.left = rect.left + (rect.width - tooltip.offsetWidth) / 2 + "px";
+    });
+    popup.addEventListener("mouseleave", function() {
+      const tooltip = document.querySelector(".popup-tooltip");
+      if (tooltip) {
+        tooltip.remove();
+      }
+    });
+  });
+});
+
 </script> 
     
   
