@@ -437,6 +437,13 @@ img {
   line-height: 45px;
   margin-left: 30px;
 }
+.popup-tooltip {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
 
 </style>
 
@@ -454,8 +461,6 @@ img {
   <div class="spaceBetween"></div>
   </div>
 
-<p>Wenn du auf das Wort <span title="Hier ist die Erklärungstext">hoverst</span>, wird ein Tooltip angezeigt.</p>
-
 
 <div class="spaceBetween"></div>
 
@@ -472,6 +477,8 @@ img {
     </div>
   </div>
 </div>
+
+<span class="popup-trigger" data-tooltip="Erklärungstext">Wort</span>
 
 
 <div class="sectionHeader">
