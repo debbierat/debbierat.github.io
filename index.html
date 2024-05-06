@@ -274,7 +274,7 @@ pre[data-line] .line-highlight[data-end]:after {
   margin: 0 auto;
 }
 .blueContainer {
-  background-color: #8151A5;
+  background-color: #8159a0;
 }
 .content {
   display: flex;
@@ -437,12 +437,19 @@ img {
   line-height: 45px;
   margin-left: 30px;
 }
+.popup-trigger {
+  color: blue;
+  position: relative;
+  cursor: pointer;
+}
 .popup-tooltip {
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(40, 39, 39, 0.8);
   color: white;
   padding: 5px;
   border-radius: 5px;
+  top: -30px;
+  left: 0;
 }
 
 </style>
@@ -735,13 +742,10 @@ Stock-Photos: <a href="https://www.pexels.com/de-de/">https://www.pexels.com</a>
       const tooltip = document.createElement("div");
       tooltip.classList.add("popup-tooltip");
       tooltip.textContent = tooltipText;
-      document.body.appendChild(tooltip);
-      const rect = this.getBoundingClientRect();
-      tooltip.style.top = rect.top - tooltip.offsetHeight - 5 + "px";
-      tooltip.style.left = rect.left + (rect.width - tooltip.offsetWidth) / 2 + "px";
+      this.appendChild(tooltip);
     });
     popup.addEventListener("mouseleave", function() {
-      const tooltip = document.querySelector(".popup-tooltip");
+      const tooltip = this.querySelector(".popup-tooltip");
       if (tooltip) {
         tooltip.remove();
       }
