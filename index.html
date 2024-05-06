@@ -460,6 +460,7 @@ img {
   top: -30px;
   left: 0;
   width: fit-content;
+  font-size: 14px;
 }
 .LinkSectionTextBox {
   display: flex;
@@ -792,7 +793,7 @@ Stock-Photos: <a href="https://www.pexels.com/de-de/">https://www.pexels.com</a>
       const tooltip = document.createElement("div");
       tooltip.classList.add("popup-tooltip");
       tooltip.textContent = tooltipText;
-      tooltip.style.width = "350px";
+      tooltip.style.width = "300px";
       this.appendChild(tooltip);
     });
     popup.addEventListener("mouseleave", function() {
