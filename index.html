@@ -782,6 +782,7 @@ Stock-Photos: <a href="https://www.pexels.com/de-de/">https://www.pexels.com</a>
       const tooltip = document.createElement("div");
       tooltip.classList.add("popup-tooltip");
       tooltip.textContent = tooltipText;
+      tooltip.style.width = "100px";
       this.appendChild(tooltip);
     });
     popup.addEventListener("mouseleave", function() {
