@@ -338,6 +338,14 @@ img {
   margin-left: 30px;
   margin-right: 30px;
 }
+.GraySectionTextBox {
+  display: flex;
+  border: 5px solid;
+  color: #959595;
+  margin-left: 50px;
+  margin-right: 50px;
+  background-color: rgb(189, 189, 189);
+}
 .sectionTextBox {
   border: 1px solid;
   color: #bbbbbb;
@@ -712,18 +720,8 @@ img {
 
 <div class="spaceBetween"></div>
 
-<div class="container">
-  <div class="content">
-    <div class="sectionTextDownload">
-      <b>Download Meta-analysis as PDF <a href="Metaanalysis.pdf">HERE</a></b>
-    
-      <b>Link to Meta-analysis <a href="https://doi.org/10.1016/j.janxdis.2018.08.003">HERE</a></b>
-    </div>
-  </div>
-</div>
-</div>
 
-<div class="BlueSectionTextBox">
+<div class="GraySectionTextBox">
   <div class="leftColumn">
     <div class="sectionTextDownload">
       <b>Download Meta-analysis as PDF <a href="Metaanalysis.pdf">HERE</a></b>
@@ -731,7 +729,7 @@ img {
   </div>
   <div class="rightColumn">
     <div class="sectionTextDownload">
-      <b>Link to Meta-analysis <a href="https://doi.org/10.1016/j.janxdis.2018.08.003">HERE</a></b>
+      <b>Link to Meta-analysis online <a href="https://doi.org/10.1016/j.janxdis.2018.08.003">HERE</a></b>
     </div>
   </div>
 </div>
@@ -794,7 +792,7 @@ Stock-Photos: <a href="https://www.pexels.com/de-de/">https://www.pexels.com</a>
       const tooltip = document.createElement("div");
       tooltip.classList.add("popup-tooltip");
       tooltip.textContent = tooltipText;
-      tooltip.style.width = "100px";
+      tooltip.style.width = "300px";
       this.appendChild(tooltip);
     });
     popup.addEventListener("mouseleave", function() {
