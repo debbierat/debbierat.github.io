@@ -383,28 +383,6 @@ img {
 .spaceBetween {
   padding: 10px;
 }
-.downloadContainer {
-  background-color: whitesmoke;
-  height: 80px;
-  width: 50%;
-  color: #3452aa;
-  font-size: 18px;
-  text-align: left;
-  margin-left: 30px;
-  margin-bottom: auto;
-}
-.downloadbutton {
-  background-color: #002FBD;
-  border: none;
-  color: white;
-  height: 30px;
-  width: 50%;
-  cursor: pointer;
-  font-size: 18px;
-}
-.downloadbutton:hover {
-  background-color: #d6cb8b;
-}
 .text-box {
   border: 1px solid #ccc;
   padding: 10px;
@@ -742,15 +720,8 @@ img {
 
 
 <div class="GraySectionTextBox">
-  <div class="leftColumn">
-    <div class="sectionTextDownload">
-      <b>Download Meta-analysis as PDF <a href="Metaanalysis.pdf">HERE</a></b>
-    </div>
-  </div>
-  <div class="rightColumn">
-    <div class="sectionTextDownload">
-      <b>Link to Meta-analysis online <a href="https://doi.org/10.1016/j.janxdis.2018.08.003">HERE</a></b>
-    </div>
+  <div class="sectionTextDownload">
+    <b>Link to Meta-analysis online <a href="https://doi.org/10.1016/j.janxdis.2018.08.003">HERE</a></b>
   </div>
 </div>
 
@@ -807,7 +778,7 @@ Stock-Photos: <a href="https://www.pexels.com/de-de/">https://www.pexels.com</a>
       document.getElementsByClassName("expand-button")[0].textContent = "-";
     } else {
       extraText.style.display = "none";
-      textBox.style.overflow = "hidden"; // Hide overflow again
+      textBox.style.overflow = "hidden";
       document.getElementsByClassName("expand-button")[0].textContent = "+";
     }
   }
