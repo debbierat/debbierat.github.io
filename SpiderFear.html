@@ -603,12 +603,12 @@ img {
         
         if (extraText.style.display === "none") {
           extraText.style.display = "block";
-          textBox.style.overflow = "visible"; // Allow overflow to show extra text
-          document.getElementsByClassName("expand-button")[0].textContent = "-"; // Change button text to "-"
+          textBox.style.overflow = "visible";
+          document.getElementsByClassName("expand-button")[0].textContent = "-";
         } else {
           extraText.style.display = "none";
-          textBox.style.overflow = "hidden"; // Hide overflow again
-          document.getElementsByClassName("expand-button")[0].textContent = "+"; // Change button text back to "+"
+          textBox.style.overflow = "hidden";
+          document.getElementsByClassName("expand-button")[0].textContent = "+"; 
         }
       }
     </script> 
